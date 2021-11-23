@@ -5,43 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
 </head>
 <body>
     <header>
-        <h1>CONTACTO</h1>
-        <nav>
-            <ul>                        
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./libros.html">Libros</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./quien-soy.html">Quién soy</a></li>          
+        <!-- Menú de navegación-->
+        <nav class="menu">
+            <img src="../Imagenes/Fondo-negro-logo.jpg" alt="Logo fondo negro" class="menu__img">
+            <ul class="menu__lista">        
+                <li class="menu__item"><a href="../index.html">Inicio</a></li>
+                <li class="menu__item"><a href="./blog.html">Blog</a></li>
+                <li class="menu__item"><a href="./libros.html">Libros</a></li>
+                <li class="menu__item"><a href="./contacto.html">Contacto</a></li>
+                <li class="menu__item"><a href="./quien-soy.html">Quién soy</a></li>
             </ul>
         </nav>
     </header>
     
-    <main>
-        <form action="">
-            <label for="nombre-apellido">Nombre y apellido:</label>
+    <main class="main__contact">
+        <h1 class="contacto">CONTACTO</h1>
+        <form action="" class="form">
+            <label for="nombre-apellido">NOMBRE Y APELLIDO:</label>
             <input type="text" name="nombre-apellido" placeholder="Agrega tu nombre">
             </form>
-            <form action="">
-                <span>Hombre</span><input type="radio" name="genero" value="hombre"><span>Mujer</span><input type="radio" name="genero" value="mujer"><span>Otro</span><input type="radio" name="genero" value="otro">
-            </form>
-            <form action="">
-                <span>País</span><select name="pais" id=""><option value="Argentina">Argentina</option><option value="Otro">Otro</option>
-
-                </select>
-            </form>
-            <form>
-                <label for="email">E-mail:</label>
+            <form action="" class="form">
+                <label for="email class="form__box">E-MAIL:</label>
                 <input type="email" name="email" placeholder="Agrega un e-mail">
             </form>
-            <form action="">
-                <label for="texto">Comentario:</label>
+            <form action="" class="form">
+                <label for="texto">TEXTO:</label>
                 <input type="text" name="Comentario" placeholder="Agrega un comentario"> 
             </form>
-            <form><input type="submit" value="Enviar"</form>
+            <form class="form__buttom"><input type="submit" value="Enviar"</form>
             
                
         
