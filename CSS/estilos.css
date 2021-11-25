@@ -29,6 +29,7 @@ main{
     background-position: cover;
     background-color: rgba(225, 138, 58, 0.78);
     padding: 5px;
+    height: 10vh;
 }
 .menu__lista{
     display: flex;
@@ -132,3 +133,74 @@ main{
     border-radius: 5%;
 }
 
+/* Blog */
+
+#plantilla{
+    display: grid;
+    grid-template-areas:
+    "nav nav"
+    "blog blog"
+    "entrada1 entrada4"
+    "entrada2 entrada5"
+    "entrada3 entrada6"
+    "footer footer";
+    grid-template-rows: auto auto 3fr 3fr 3fr auto;
+    grid-template-columns: 50% 50%;
+}
+.nav{
+    grid-area: nav;
+}
+#titulo{
+    grid-area: blog;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    font-style: italic;
+    margin: 5% 0% 5% 7%;
+}
+.entrada2{
+    height: 200px;
+    margin: 7%;
+    text-align: center;
+    display: table-cell;
+    background-color: #C4C4C4;
+    justify-content: space-around;
+    border-radius: 5%;
+}
+.foot{
+    grid-area: footer;
+}
+
+/* Libros */
+
+#plantilla2{
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "titulo titulo titulo titulo"
+    "libro1 libro2 libro3 libro4"
+    "footer footer footer footer";
+    grid-template-rows: auto auto 70vh;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.nav2{
+    grid-area: nav;
+}
+#titulo2{
+    grid-area: titulo;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    font-style: italic;
+    margin: 5% 0% 5% 7%;
+}
+.foot2{
+    grid-area: footer;
+}
+.libro{
+    height: 350px;
+    margin: 7%;
+    border-radius: 5%;
+    text-align: center;
+    background-color: #C4C4C4;
+}
